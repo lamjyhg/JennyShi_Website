@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jenny</title>
+    <meta name="description" content="Jenny's personal webiste">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <link rel="stylesheet" href="style.css">
+    <script src="./behaviours.js" defer></script>
+</head>
+<body>
+    <!-- NaviBar -->
+    <header>
+        <img src="./images/navibar.svg" alt="navibar icon" id="navibar">
+        <nav>  
+            <ul id="navibar-content">
+             <li><a href="#about">About</a></li>
+             <li><a href="#skills">Skills</a></li>
+             <li><a href="#portofolio">Portofolio</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Welcome -->
+    <section id="home">
+        <div class="home__container">
+            <h1>I'm Jenny.</h1>
+            <p>Welcome to my world :)</p>
+        </div>
+    </section>
+     <!-- About -->
+    <section id="about">
+        <h2>About Jenny</h2>
+        <div class="about__details">
+            <img src="./images/profile.jpg" alt="jenny profile" />
+            <div class="about__details__container">
+                <p>Hi
+                    I’m <span>Jenny</span> :-) a graduate of Bachelor of Visual Arts from the University of Sydney, majoring in Film Studies. My art practice is focused on experimental video and sound. I’m interested in exploring and visualising self-awareness, absurdism, interior and exterior space.</p>
+                <h3>Know more:</h3>
+                <div class="about__details__container__links">
+                    <a href="https://www.facebook.com/shurong97" target="_blank">
+                        <img src="./images/facebook.svg" alt="facebook link" />
+                    </a>
+                    <a href="https://www.instagram.com/avinegarfreak/" target="_blank">
+                        <img src="./images/instagram.svg" alt="ins link" />
+                    </a>
+                    <a href="https://vimeo.com/shurong" target="_blank">
+                        <img src="./images/vimeo.svg" alt="vimeo link" />
+                    </a> 
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- skills -->
+    <section id="skills">
+        <h2>What I do?</h2>
+        <div class="skills__details">
+            <div class="skills__details__skill">
+                <img src="./images/screenwritting.svg" alt="screenwritting" />
+                <h3>ScreenWriting</h3>
+                <p>write story for film</p>
+            </div>
+            <div class="skills__details__skill">
+                <img src="./images/photography.svg" alt="photography" />
+                <h3>Photography</h3>
+                <p>shoot and process</p>
+            </div>
+            <div class="skills__details__skill">
+                <img src="./images/filmmaking.svg" alt="filmmaking" />
+                <h3>FilmMaking</h3>
+                <p>direct and processe</p>
+            </div>
+            <div class="skills__details__skill">
+                <img src="./images/design.svg" alt="screenwritting" />
+                <h3>Design</h3>
+                <p>visual and literal design </p>
+            </div>
+            <div class="skills__details__skill">
+                <img src="./images/painting.svg" alt="painting" />
+                <h3>Drawing</h3>
+                <p>sketch and paint</p>
+            </div>
+            <div class="skills__details__skill">
+                <img src="./images/teaching.svg" alt="teaching" />
+                <h3>Teaching</h3>
+                <p>tutor of classes about media</p>
+            </div>
+        </div>
+    </section>
+     <!-- Portofolio -->
+    <section id="portofolio">
+        <h2>Portofolio</h2>
+        <div class="portofolio__buttons">
+            <button class="portofolio__buttons--images portofolio__buttons--active">Images</button>
+            <button class="portofolio__buttons--videos">Videos</button>
+        </div>
+        <div class="portofolio__container">
+            <div class="portofolio__container__buttons">
+                <button class="portofolio-button-previous" onclick="plusSlides(-1)">&#10094;</button>
+                <button class="portofolio-button-next" onclick="plusSlides(1)">&#10095;</button>
+            </div>
+            <!-- Images  -->
+            <div class="portofolio__container__images  portofolio__container--shown">
+                <img class= "portofolio-image-block" src="./images/portofolio_image1.JPG" alt="People see sea"/>
+                <img class= "portofolio-image-block" src="./images/portofolio_image2.JPG" alt="Sydney CBD's sky"/>
+                <img class= "portofolio-image-block" src="./images/portofolio_image3.JPG" alt="park"/>
+                <img class= "portofolio-image-block" src="./images/portofolio_image4.JPG" alt="hand"/>
+                <img class= "portofolio-image-block" src="./images/portofolio_image5.JPG" alt="sunset"/>
+                <img class= "portofolio-image-block" src="./images/portofolio_image6.JPG" alt="park"/>
+            </div>
+            <!-- Videos  -->
+            <div class="portofolio__container__videos  ">
+                <iframe src="https://player.vimeo.com/video/648464734?h=1b195d6d89"  frameborder="0" allowfullscreen class= "portofolio-video-block"></iframe>
+                <iframe  src="https://player.vimeo.com/video/644297774?h=2be6117288" frameborder="0" allowfullscreen class= "portofolio-video-block"></iframe>
+                <iframe   src="https://player.vimeo.com/video/644295002?h=a69785ec71"  frameborder="0" allowfullscreen class= "portofolio-video-block"></iframe>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <p class="copyright">&copy;2022 Jiehong Lin</p>
+    </footer>
+</body>
+</html>
