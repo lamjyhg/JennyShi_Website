@@ -79,7 +79,7 @@ linear-gradient(
 */
 #home {
   height: 500px;
-  background: url("./images/background.JPG");
+  background: url('./images/background.JPG');
   padding-top: 250px;
   color: #d0d0d0;
   background-attachment: fixed;
@@ -322,13 +322,15 @@ linear-gradient(
 }
 #portofolio .portofolio__container__buttons {
   position: absolute;
-  top: 0;
+  top: -4px;
   right: 0;
+  max-width: 20px;
 }
 #portofolio .portofolio__container__buttons > button {
   border: none;
   background: none;
   font-size: 18px;
+  width: 50%;
 }
 #portofolio .portofolio__buttons {
   display: flex;
@@ -341,6 +343,8 @@ linear-gradient(
   font-size: 18px;
   width: 80px;
   height: 30px;
+  text-align: center;
+  vertical-align: middle;
   box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.103),
     -8px -8px 12px 0 rgba(255, 255, 255, 0.048);
   border-radius: 5px;
